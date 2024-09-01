@@ -79,6 +79,30 @@
   background-color: black;
 }
 
+@media (max-width: 1200px) {
+  .login-image {
+    background-position-y: 0;
+  }
+  .login-form form input {
+    width: 300px;
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .login-form form {
+    gap: 3rem;
+  }
+
+  #submit-login {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  #form-info {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .login-image {
     display: none;
