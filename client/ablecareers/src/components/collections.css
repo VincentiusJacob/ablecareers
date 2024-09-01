@@ -101,6 +101,22 @@
   gap: 0.7rem;
 }
 
+@media (max-width: 1200px) {
+  .course-collection,
+  .jobs-collection {
+    width: 500px;
+    gap: 2rem;
+  }
+
+  .course-collection > h1 {
+    font-size: 40px;
+  }
+
+  .education-footer {
+    margin-top: 250px;
+  }
+}
+
 @media (max-width: 600px) {
   .collections-container,
   .jobs-collections {
