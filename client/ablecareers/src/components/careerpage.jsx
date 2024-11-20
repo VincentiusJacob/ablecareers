@@ -18,11 +18,11 @@ function careerpage() {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const result = await axios.get(`http://localhost:3000/get/job/${id}`);
+        const result = await axios.get(`https://ablecareers-new.vercel.app/get/job/${id}`);
         setJob(result.data);
 
         const checkApplied = await axios.get(
-          `http://localhost:3000/job/applied/${currentUserID}/${jobID}`
+          `https://ablecareers-new.vercel.app/job/applied/${currentUserID}/${jobID}`
         );
 
         if (checkApplied.status === 200) {
@@ -42,7 +42,7 @@ function careerpage() {
   const handleApply = async () => {
     try {
       const applyUser = await axios.post(
-        `http://localhost:3000/applied/${currentUserID}/${id}`
+        `https://ablecareers-new.vercel.app/applied/${currentUserID}/${id}`
       );
 
       if (applyUser.status === 200) {
