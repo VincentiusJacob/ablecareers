@@ -28,7 +28,7 @@ function Login() {
         setErrorMsg("Please fill in all the fields!");
       } else {
         const result = await axios.post(
-          "http://localhost:3000/auth/login",
+          "https://ablecareers-new.vercel.app/auth/login",
           loginData
         );
 
