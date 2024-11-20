@@ -27,8 +27,6 @@ const pool = new pg.Pool({
 });
 
 
-module.exports = app;
-
 const createTableSQL = `
 DO $$
 BEGIN
