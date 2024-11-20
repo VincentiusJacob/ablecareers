@@ -60,7 +60,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 ap.use(cors({
-  origin: ["https://ablecareers-new.vercel.app/"],
+  origin: ["https://ablecareers-new-frontend.vercel.app"],
   method: ["POST", "GET"],
   credentials: true
 }))
