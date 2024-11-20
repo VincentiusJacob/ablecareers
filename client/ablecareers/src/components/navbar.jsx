@@ -31,7 +31,7 @@ function Navbar() {
   const handleLogOut = async () => {
     try {
       // Send a request to the server to destroy the session
-      await fetch("http://localhost:3000/auth/logout", {
+      await fetch("https://ablecareers-new.vercel.app/auth/logout", {
         method: "POST",
         credentials: "include", // Include cookies with the request
       });
