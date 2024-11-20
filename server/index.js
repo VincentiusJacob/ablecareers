@@ -26,6 +26,7 @@ const pool = new pg.Pool({
   port: 5433,
 });
 
+
 module.exports = app;
 
 const createTableSQL = `
@@ -58,12 +59,13 @@ pool.connect().then((client) => {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 ap.use(cors({
-  origin: ["https://ablecareers-new-frontend.vercel.app"],
+  origin: "https://ablecareers-new-frontend.vercel.app",
   method: ["POST", "GET", "PUT", "DELETE"],
   credentials: true
 }))
+
+
 
 app.use(
   session({
