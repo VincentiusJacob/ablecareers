@@ -24,7 +24,7 @@ function Education() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const result = await axios.get("http://localhost:3000/get/courses");
+        const result = await axios.get("https://ablecareers-new.vercel.app/get/courses");
         setCourses(result.data);
         setPopularCourses(
           result.data.sort((a, b) => b.enrolled - a.enrolled).slice(0, 8)
@@ -50,7 +50,7 @@ function Education() {
 
     try {
       const result = await axios.get(
-        `http://localhost:3000/get/courses?filter=${filter}`
+        `https://ablecareers-new.vercel.app/get/courses?filter=${filter}`
       );
       setFilterCourses(result.data);
     } catch (err) {
@@ -66,7 +66,7 @@ function Education() {
 
     try {
       const result = await axios.get(
-        `http://localhost:3000/get/courses?search=${query}`
+        `https://ablecareers-new.vercel.app/get/courses?search=${query}`
       );
       setSearchCourses(result.data);
       setNoSearchResults(result.data.length === 0);
