@@ -17,7 +17,7 @@ function Collections() {
     const fetchCourse = async () => {
       try {
         const result = await axios.get(
-          `http://localhost:3000/courses/${userID}`
+          `https://ablecareers-new.vercel.app/courses/${userID}`
         );
         console.log("Course fetch result:", result);
 
@@ -32,7 +32,7 @@ function Collections() {
 
     const fetchJobs = async () => {
       try {
-        const getJob = await axios.get(`http://localhost:3000/jobs/${userID}`);
+        const getJob = await axios.get(`https://ablecareers-new.vercel.app/jobs/${userID}`);
 
         if (getJob.status === 200) {
           setJobs(getJob.data);
