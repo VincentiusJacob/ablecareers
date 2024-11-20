@@ -16,7 +16,7 @@ function footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post("http://localhost:3000/push/email", {
+      const result = await axios.post("https://ablecareers-new.vercel.app/push/email", {
         data: email,
       });
 
