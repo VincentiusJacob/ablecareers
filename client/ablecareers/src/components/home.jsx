@@ -1,15 +1,15 @@
 import React from "react";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
-import waitressimg from "../../public/waitress.jpg";
-import laptop from "../../public/peoplewithlaptop.jpg";
-import david from "../../public/david.jpg";
-import naya from "../../public/naya.jpg";
-import unicef from "../../public/unicef.png";
-import rakuten from "../../public/rakuten.png";
-import kemnaker from "../../public/kemnaker.png";
-import linkedin from "../../public/linkedin.png";
-import act from "../../public/act.png";
+import waitressimg from "/waitress.jpg";
+import laptop from "/peoplewithlaptop.jpg";
+import david from "/david.jpg";
+import naya from "/naya.jpg";
+import unicef from "/unicef.png";
+import rakuten from "/rakuten.png";
+import kemnaker from "/kemnaker.png";
+import linkedin from "/linkedin.png";
+import act from "/act.png";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 function home() {
   const navigate = useNavigate();

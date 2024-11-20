@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./register.css";
-import bg1 from "../../public/wheelcair.png";
+import bg1 from "/wheelcair.png";
 
 function Register() {
   const [registerData, setRegisterData] = useState({

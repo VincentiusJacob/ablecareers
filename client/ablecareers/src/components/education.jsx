@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./education.css";
-import star from "../../public/star.png";
-import search from "../../public/search.png";
-import notLogged from "../../public/information.png";
+import star from "/star.png";
+import search from "/search.png";
+import notLogged from "/information.png";
 
 import { useNavigate } from "react-router-dom";
 import axios from "axios";

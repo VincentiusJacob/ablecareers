@@ -3,7 +3,7 @@ import "./jobs.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import notLogged from "../../public/information.png";
+import notLogged from "/information.png";
 
 function Jobs() {
   const navigate = useNavigate();

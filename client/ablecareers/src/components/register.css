@@ -97,6 +97,28 @@
   background-color: black;
 }
 
+@media (max-width: 1200px) {
+  .regist-image {
+    background-position-y: 0;
+  }
+  .regist-form form input {
+    padding: 30px;
+  }
+
+  .regist-form form {
+    gap: 3rem;
+  }
+
+  #submit-register {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  #form-info {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .regist-image {
     display: none;

@@ -46,7 +46,7 @@ function Course() {
       );
 
       if (enrollUser.status === 200) {
-        setApplied(true); // Update the button state
+        setApplied(true);
       }
     } catch (err) {
       console.log(err);
