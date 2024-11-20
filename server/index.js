@@ -57,7 +57,14 @@ pool.connect().then((client) => {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors()); 
+app.use(
+  cors({
+    origin: "https://ablecareers-new-frontend.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, 
+  })
+);
+
 
 
 
