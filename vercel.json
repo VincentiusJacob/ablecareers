@@ -3,10 +3,10 @@
   "builds": [
     {
       "src": "client/ablecareers/package.json",
-      "use": "@vercel/react"
+      "use": "@vercel/vite"
     },
     {
-      "src": "server/index.js",
+      "src": "server/package.json",
       "use": "@vercel/node"
     }
   ],
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client/ablecareers/build/$1"
+      "dest": "client/ablecareers/dist/$1"
     }
   ]
 }
