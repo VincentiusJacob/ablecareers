@@ -43,7 +43,7 @@ function Register() {
         setErrorMsg("");
 
         const result = await axios.post(
-          "http://localhost:3000/auth/register",
+          "https://ablecareers-new.vercel.app/auth/register",
           registerData
         );
 
