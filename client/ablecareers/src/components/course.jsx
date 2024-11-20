@@ -22,7 +22,7 @@ function Course() {
         console.log("current user id: ", currentUserID);
         console.log("id: ", parseInt(id));
         const checkApplied = await axios.get(
-          `http://localhost:3000/course/enrolled/${currentUserID}/${courseID}`
+          `https://ablecareers-new.vercel.app/course/enrolled/${currentUserID}/${courseID}`
         );
 
         if (checkApplied.status === 200) {
@@ -42,7 +42,7 @@ function Course() {
   const handleJoinCourse = async () => {
     try {
       const enrollUser = await axios.post(
-        `http://localhost:3000/enrolled/${currentUserID}/${id}`
+        `https://ablecareers-new.vercel.app/enrolled/${currentUserID}/${id}`
       );
 
       if (enrollUser.status === 200) {
