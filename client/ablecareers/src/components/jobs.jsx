@@ -18,7 +18,7 @@ function Jobs() {
   useEffect(() => {
     const renderJobs = async () => {
       try {
-        const result = await axios.get("http://localhost:3000/get/jobs");
+        const result = await axios.get("https://ablecareers-new.vercel.app/get/jobs");
         if (result.data) {
           setJobs(result.data);
           setDisplayedJobs(result.data);
