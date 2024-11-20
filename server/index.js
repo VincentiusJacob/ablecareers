@@ -61,7 +61,7 @@ app.use(bodyParser.json());
 
 ap.use(cors({
   origin: ["https://ablecareers-new-frontend.vercel.app"],
-  method: ["POST", "GET"],
+  method: ["POST", "GET", "PUT", "DELETE"],
   credentials: true
 }))
 
@@ -80,7 +80,7 @@ app.use(
   })
 );
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get("/jobs/:userID", async (req, res) => {
   const { userID } = req.params;
